@@ -1,0 +1,1459 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIG BOSS CAFÉ | Fast Food & Late Night Spot in Peshawar</title>
+    <meta name="description" content="BIG BOSS CAFÉ on Ring Road, Wazir Colony, Peshawar. Late-night burgers, pizza, shawarma & drinks until 4 AM. Dine-in, Takeout, Delivery. Call +92 370 1515100.">
+    <meta name="keywords" content="Big Boss Cafe, Peshawar Fast Food, Ring Road Restaurant, Late Night Food Peshawar, Burgers Peshawar, Shawarma Wazir Colony">
+    
+    <!-- Open Graph SEO -->
+    <meta property="og:title" content="BIG BOSS CAFÉ - Big Flavor. Big Vibes.">
+    <meta property="og:description" content="Peshawar's premier fast food hangout. Open late till 4:00 AM. 5.0 ★ Rated. Dine-In, Takeout & Express Delivery.">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind Custom Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0B0B0D',
+                        darkSurface: '#121216',
+                        darkCard: '#1A1A22',
+                        brandOrange: '#FF4D1C',
+                        brandYellow: '#DFFF00',
+                        brandCream: '#F5F0E8',
+                        brandMuted: '#9CA3AF'
+                    },
+                    fontFamily: {
+                        display: ['Space Grotesk', 'sans-serif'],
+                        body: ['Plus Jakarta Sans', 'sans-serif']
+                    },
+                    boxShadow: {
+                        'glow-orange': '0 0 25px -5px rgba(255, 77, 28, 0.4)',
+                        'glow-yellow': '0 0 25px -5px rgba(223, 255, 0, 0.3)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0B0B0D;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #262630;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #FF4D1C;
+        }
+
+        /* Glassmorphism CSS */
+        .glass-panel {
+            background: rgba(18, 18, 22, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .glass-card {
+            background: rgba(26, 26, 34, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        /* Noise texture overlay */
+        .bg-noise {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+        }
+
+        /* Animation utilities */
+        .reveal-element {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        .reveal-element.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Float animation */
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(1deg); }
+        }
+        .animate-float {
+            animation: floatSlow 5s ease-in-out infinite;
+        }
+
+        /* Pulse glow */
+        @keyframes pulseGlow {
+            0%, 100% { opacity: 0.6; }
+            50% { opacity: 1; }
+        }
+        .animate-glow {
+            animation: pulseGlow 3s ease-in-out infinite;
+        }
+
+        /* Mobile safe-area padding for sticky bottom bar */
+        .pb-safe-bottom {
+            padding-bottom: calc(4.5rem + env(safe-area-inset-bottom));
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .reveal-element, .animate-float, .animate-glow {
+                animation: none !important;
+                transition: none !important;
+                opacity: 1 !important;
+                transform: none !important;
+            }
+        }
+    </style>
+
+    <!-- Schema.org LocalBusiness Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FastFoodRestaurant",
+      "name": "BIG BOSS CAFÉ",
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=1000",
+      "telePhone": "+92 370 1515100",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Ring Road, near One Dollar Shop, near MMC Hospital, Wazir Colony",
+        "addressLocality": "Peshawar",
+        "postalCode": "25000",
+        "addressCountry": "PK"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 34.001,
+        "longitude": 71.55
+      },
+      "url": "https://bigbosscafe.pk",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "12:00",
+          "closes": "04:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "48"
+      },
+      "servesCuisine": ["Fast Food", "Burgers", "Pizza", "Shawarma", "Coffee"],
+      "hasMenu": "#menu"
+    }
+    </script>
+</head>
+
+<body class="bg-darkBg text-brandCream font-body bg-noise antialiased selection:bg-brandOrange selection:text-white relative">
+
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-40 transition-all duration-300" id="mainHeader">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-panel mt-3 sm:mt-5 rounded-2xl px-4 py-3 sm:py-4 flex items-center justify-between shadow-2xl">
+                
+                <!-- Logo -->
+                <a href="#home" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-brandOrange text-white flex items-center justify-center font-display font-black text-xl tracking-wider shadow-glow-orange group-hover:scale-105 transition-transform">
+                        BB
+                    </div>
+                    <div>
+                        <span class="font-display font-extrabold text-lg sm:text-xl tracking-tight text-white block leading-none">
+                            BIG BOSS <span class="text-brandOrange">CAFÉ</span>
+                        </span>
+                        <span class="text-[10px] font-semibold tracking-widest text-brandYellow uppercase block mt-1">PESHAWAR • RING ROAD</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center gap-8 font-medium text-sm tracking-wide">
+                    <a href="#home" class="hover:text-brandOrange transition-colors py-1">HOME</a>
+                    <a href="#why-us" class="hover:text-brandOrange transition-colors py-1">WHY US</a>
+                    <a href="#menu" class="hover:text-brandOrange transition-colors py-1">MENU</a>
+                    <a href="#late-night" class="hover:text-brandOrange transition-colors py-1">LATE NIGHT</a>
+                    <a href="#gallery" class="hover:text-brandOrange transition-colors py-1">GALLERY</a>
+                    <a href="#location" class="hover:text-brandOrange transition-colors py-1">LOCATION</a>
+                </nav>
+
+                <!-- Actions / Cart Header CTA -->
+                <div class="flex items-center gap-3">
+                    <button onclick="toggleCartModal()" class="relative p-2.5 rounded-xl bg-darkCard hover:bg-white/10 text-white transition-all border border-white/10" aria-label="View Order Tray">
+                        <i class="fa-solid fa-bag-shopping text-base sm:text-lg"></i>
+                        <span id="cartBadge" class="absolute -top-1.5 -right-1.5 bg-brandOrange text-white text-[11px] font-extrabold w-5 h-5 rounded-full flex items-center justify-center border-2 border-darkBg hidden">0</span>
+                    </button>
+
+                    <a href="https://wa.me/923701515100?text=Hi%20BIG%20BOSS%20CAF%C3%89,%20I%20would%20like%20to%20place%20an%20order!" target="_blank" class="hidden sm:flex items-center gap-2 bg-brandOrange hover:bg-orange-600 text-white font-display font-bold text-xs sm:text-sm px-5 py-3 rounded-xl transition-all shadow-glow-orange hover:scale-105">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>ORDER NOW</span>
+                    </a>
+
+                    <!-- Mobile Hamburger Menu Button -->
+                    <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="md:hidden p-2.5 rounded-xl bg-darkCard text-white hover:bg-white/10 border border-white/10" aria-label="Toggle Mobile Navigation">
+                        <i class="fa-solid fa-bars-staggered text-lg"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Fullscreen Overlay Menu -->
+    <div id="mobileMenuOverlay" class="fixed inset-0 bg-darkBg/95 backdrop-blur-2xl z-50 flex flex-col justify-between p-6 opacity-0 pointer-events-none transition-all duration-300">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-brandOrange text-white flex items-center justify-center font-display font-black text-lg">BB</div>
+                <span class="font-display font-black text-xl text-white">BIG BOSS CAFÉ</span>
+            </div>
+            <button onclick="toggleMobileMenu()" class="w-10 h-10 rounded-full bg-darkCard border border-white/10 text-white flex items-center justify-center text-xl" aria-label="Close Mobile Navigation">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <nav class="flex flex-col gap-6 text-center py-8 font-display text-2xl font-bold tracking-wide">
+            <a href="#home" onclick="toggleMobileMenu()" class="hover:text-brandOrange transition-colors">HOME</a>
+            <a href="#why-us" onclick="toggleMobileMenu()" class="hover:text-brandOrange transition-colors">WHY US</a>
+            <a href="#menu" onclick="toggleMobileMenu()" class="hover:text-brandOrange transition-colors">OUR MENU</a>
+            <a href="#late-night" onclick="toggleMobileMenu()" class="hover:text-brandOrange transition-colors text-brandYellow">LATE NIGHT (4 AM)</a>
+            <a href="#gallery" onclick="toggleMobileMenu()" class="hover:text-brandOrange transition-colors">GALLERY</a>
+            <a href="#location" onclick="toggleMobileMenu()" class="hover:text-brandOrange transition-colors">LOCATION & HOURS</a>
+        </nav>
+
+        <div class="flex flex-col gap-3">
+            <a href="https://wa.me/923701515100?text=Hi%20BIG%20BOSS%20CAF%C3%89,%20I%20would%20like%20to%20place%20an%20order!" target="_blank" class="w-full bg-brandOrange text-white py-4 rounded-xl font-display font-extrabold text-center flex items-center justify-center gap-3 shadow-glow-orange">
+                <i class="fa-brands fa-whatsapp text-xl"></i>
+                <span>ORDER ON WHATSAPP</span>
+            </a>
+            <a href="tel:+923701515100" class="w-full bg-darkCard border border-white/10 text-white py-3.5 rounded-xl font-display font-bold text-center flex items-center justify-center gap-2">
+                <i class="fa-solid fa-phone text-brandYellow"></i>
+                <span>CALL +92 370 1515100</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen pt-28 sm:pt-36 pb-16 flex items-center relative overflow-hidden">
+        <!-- Ambient Glowing Background Spheres -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brandOrange/20 rounded-full blur-[140px] pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-[350px] h-[350px] bg-brandYellow/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Hero Left Column Text -->
+                <div class="lg:col-span-7 space-y-6 sm:space-y-8 text-center lg:text-left reveal-element active">
+                    
+                    <!-- Floating Tag Pill -->
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-brandOrange/30 text-xs sm:text-sm font-semibold tracking-wider text-brandCream">
+                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+                        <span class="text-brandYellow uppercase font-bold">LATE NIGHT SPOT</span>
+                        <span class="text-white/40">•</span>
+                        <span>OPEN TILL 4:00 AM</span>
+                    </div>
+
+                    <!-- Main Massive Headline -->
+                    <h1 class="font-display text-5xl sm:text-7xl lg:text-8xl font-black tracking-tight text-white leading-[0.95]">
+                        BIG FLAVOR.<br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-brandOrange via-orange-400 to-brandYellow">
+                            BIG VIBES.
+                        </span>
+                    </h1>
+
+                    <!-- Supporting Text -->
+                    <p class="text-brandMuted text-base sm:text-xl max-w-xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Peshawar’s premier fast-food destination on Ring Road. Sizzling loaded burgers, gourmet crown crust pizzas, spicy shawarmas, and ice-cold shakes crafted for night owls and food lovers.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#menu" class="w-full sm:w-auto bg-brandOrange hover:bg-orange-600 text-white font-display font-extrabold text-base px-8 py-4 rounded-xl transition-all shadow-glow-orange flex items-center justify-center gap-3 group">
+                            <span>EXPLORE MENU</span>
+                            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+
+                        <a href="https://wa.me/923701515100?text=Hi%20BIG%20BOSS%20CAF%C3%89,%20I%20would%20like%20to%20place%20an%20order!" target="_blank" class="w-full sm:w-auto glass-panel hover:bg-white/10 text-white font-display font-bold text-base px-8 py-4 rounded-xl transition-all border border-white/15 flex items-center justify-center gap-3">
+                            <i class="fa-brands fa-whatsapp text-emerald-400 text-xl"></i>
+                            <span>QUICK WHATSAPP ORDER</span>
+                        </a>
+                    </div>
+
+                    <!-- Key Trust Indicators Badge Line -->
+                    <div class="pt-6 border-t border-white/10 grid grid-cols-3 gap-4 max-w-md mx-auto lg:mx-0 text-center lg:text-left">
+                        <div>
+                            <div class="font-display text-2xl sm:text-3xl font-extrabold text-white flex items-center justify-center lg:justify-start gap-1">
+                                5.0 <i class="fa-solid fa-star text-brandYellow text-lg"></i>
+                            </div>
+                            <div class="text-xs text-brandMuted mt-0.5">Google Rating</div>
+                        </div>
+                        <div>
+                            <div class="font-display text-2xl sm:text-3xl font-extrabold text-brandYellow">4 AM</div>
+                            <div class="text-xs text-brandMuted mt-0.5">Late Night Closing</div>
+                        </div>
+                        <div>
+                            <div class="font-display text-2xl sm:text-3xl font-extrabold text-white">3-in-1</div>
+                            <div class="text-xs text-brandMuted mt-0.5">Dine • Takeout • Delivery</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Hero Right Column Visual Stack -->
+                <div class="lg:col-span-5 relative reveal-element active" style="transition-delay: 200ms;">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        
+                        <!-- Main Hero Imagery Card -->
+                        <div class="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-darkCard group">
+                            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=1000" 
+                                 alt="Big Boss Café Loaded Gourmet Monster Burger with Fries" 
+                                 loading="eager"
+                                 class="w-full h-[420px] sm:h-[500px] object-cover object-center group-hover:scale-105 transition-transform duration-700">
+                            
+                            <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-transparent to-transparent opacity-80"></div>
+
+                            <!-- Image Overlay Badge Bottom -->
+                            <div class="absolute bottom-5 left-5 right-5 glass-panel p-4 rounded-2xl border border-white/15 flex items-center justify-between">
+                                <div>
+                                    <span class="text-xs font-bold text-brandYellow uppercase tracking-wider">SIGNATURE CREATION</span>
+                                    <h2 class="font-display font-extrabold text-lg text-white">BOSS MONSTER ZINGER</h2>
+                                </div>
+                                <a href="#menu" class="w-10 h-10 rounded-xl bg-brandOrange text-white flex items-center justify-center shadow-glow-orange hover:scale-110 transition-transform">
+                                    <i class="fa-solid fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Floating Badges Over Image -->
+                        <!-- Badge 1: Top Right Rating -->
+                        <div class="absolute -top-6 -right-4 sm:-right-6 glass-card p-3.5 rounded-2xl shadow-2xl border border-white/15 animate-float flex items-center gap-3 z-20">
+                            <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-crown"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-brandMuted uppercase font-bold">TOP RATED</div>
+                                <div class="font-display font-extrabold text-sm text-white">5.0 STAR QUALITY</div>
+                            </div>
+                        </div>
+
+                        <!-- Badge 2: Bottom Left Delivery -->
+                        <div class="absolute -bottom-6 -left-4 sm:-left-6 glass-card p-3.5 rounded-2xl shadow-2xl border border-white/15 animate-float flex items-center gap-3 z-20" style="animation-delay: -2.5s;">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-motorcycle"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-brandMuted uppercase font-bold">FAST SERVICE</div>
+                                <div class="font-display font-extrabold text-sm text-white">PESHAWAR EXPRESS</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- "Why Big Boss?" Feature Bar -->
+    <section id="why-us" class="py-12 border-y border-white/10 bg-darkSurface relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="glass-card p-6 rounded-2xl border border-white/5 hover:border-brandOrange/40 transition-all group reveal-element">
+                    <div class="w-12 h-12 rounded-xl bg-brandOrange/10 text-brandOrange flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <h2 class="font-display font-bold text-lg text-white mb-1">Open Till 4:00 AM</h2>
+                    <p class="text-xs text-brandMuted leading-relaxed">Satisfy late-night cravings in Peshawar anytime, every single night.</p>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl border border-white/5 hover:border-brandOrange/40 transition-all group reveal-element" style="transition-delay: 100ms;">
+                    <div class="w-12 h-12 rounded-xl bg-brandYellow/10 text-brandYellow flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-burger"></i>
+                    </div>
+                    <h2 class="font-display font-bold text-lg text-white mb-1">Big Boss Portions</h2>
+                    <p class="text-xs text-brandMuted leading-relaxed">Generous recipes loaded with premium sauces, crisp veggies, and heavy cheese.</p>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl border border-white/5 hover:border-brandOrange/40 transition-all group reveal-element" style="transition-delay: 200ms;">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <h2 class="font-display font-bold text-lg text-white mb-1">Dine-In • Takeout • Delivery</h2>
+                    <p class="text-xs text-brandMuted leading-relaxed">Relax with friends at Wazir Colony or get hot food delivered straight home.</p>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl border border-white/5 hover:border-brandOrange/40 transition-all group reveal-element" style="transition-delay: 300ms;">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h2 class="font-display font-bold text-lg text-white mb-1">5.0 ★ Google Score</h2>
+                    <p class="text-xs text-brandMuted leading-relaxed">Verified 5-star experience praised for quality, warmth, and flavor.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- "The Big Picks" Signature Picks Section -->
+    <section class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4 reveal-element">
+                <div>
+                    <span class="text-xs font-extrabold text-brandOrange tracking-widest uppercase block mb-2">CURATED FOR HUNGRY SOULS</span>
+                    <h2 class="font-display text-4xl sm:text-5xl font-extrabold text-white tracking-tight">
+                        THE BIG <span class="text-brandYellow">PICKS.</span>
+                    </h2>
+                </div>
+                <p class="text-brandMuted text-sm max-w-md">
+                    Our crowd-favorite fast food specialties loved by foodies across Peshawar.
+                </p>
+            </div>
+
+            <!-- Bento Editorial Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Main Feature Card (Large) -->
+                <div class="md:col-span-2 glass-card rounded-3xl overflow-hidden border border-white/10 relative group reveal-element flex flex-col justify-end min-h-[380px] p-8">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=1000" 
+                         alt="Big Boss Crown Crust Pizza Special" 
+                         class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-darkBg/60 to-transparent"></div>
+                    
+                    <div class="relative z-10 space-y-3">
+                        <span class="px-3 py-1 bg-brandOrange text-white font-display font-bold text-xs uppercase rounded-full tracking-wider inline-block">
+                            BESTSELLER
+                        </span>
+                        <h3 class="font-display font-extrabold text-3xl sm:text-4xl text-white">CROWN CRUST SPECIAL PIZZA</h3>
+                        <p class="text-brandCream/80 text-sm max-w-xl">
+                            Loaded crust pockets stuffed with cream cheese & spiced kebabs, topped with grilled chicken tikka, olives, jalapeños, and secret boss garlic drizzle.
+                        </p>
+                        <div class="pt-2 flex items-center justify-between">
+                            <span class="text-brandYellow font-display font-black text-xl">Verified Favorite</span>
+                            <button onclick="addToOrder('Crown Crust Special Pizza')" class="bg-white hover:bg-brandOrange hover:text-white text-darkBg font-display font-bold text-xs px-5 py-2.5 rounded-xl transition-all shadow-lg flex items-center gap-2">
+                                <i class="fa-solid fa-plus"></i> ADD TO TRAY
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary Pick 1 -->
+                <div class="glass-card rounded-3xl overflow-hidden border border-white/10 relative group reveal-element flex flex-col justify-end min-h-[380px] p-6" style="transition-delay: 100ms;">
+                    <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&q=80&w=800" 
+                         alt="Big Boss Special Chicken Shawarma Wrap" 
+                         class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-darkBg/70 to-transparent"></div>
+                    
+                    <div class="relative z-10 space-y-2">
+                        <span class="px-3 py-1 bg-brandYellow text-darkBg font-display font-bold text-[11px] uppercase rounded-full tracking-wider inline-block">
+                            LOCAL FAVORITE
+                        </span>
+                        <h3 class="font-display font-extrabold text-2xl text-white">SPECIAL CLUB SHAWARMA</h3>
+                        <p class="text-brandMuted text-xs">
+                            Flame-roasted chicken wrapped in toasted bread with smoked garlic sauce and house pickles.
+                        </p>
+                        <div class="pt-2 flex items-center justify-between">
+                            <span class="text-white text-xs font-semibold">Street Classic</span>
+                            <button onclick="addToOrder('Special Club Shawarma')" class="bg-brandOrange text-white font-display font-bold text-xs px-4 py-2 rounded-xl hover:bg-orange-600 transition-all">
+                                <i class="fa-solid fa-plus"></i> ADD
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary Pick 2 -->
+                <div class="glass-card rounded-3xl overflow-hidden border border-white/10 relative group reveal-element flex flex-col justify-end min-h-[320px] p-6" style="transition-delay: 200ms;">
+                    <img src="https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&q=80&w=800" 
+                         alt="Big Boss Loaded Cheese Mayo Fries" 
+                         class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-darkBg/70 to-transparent"></div>
+                    
+                    <div class="relative z-10 space-y-2">
+                        <h3 class="font-display font-extrabold text-2xl text-white">CHEDDAR LOADED FRIES</h3>
+                        <p class="text-brandMuted text-xs">Crispy cut potato fries smothered in warm cheese sauce, jalapeno slice and zesty spice blend.</p>
+                        <button onclick="addToOrder('Cheddar Loaded Fries')" class="w-full bg-white/10 hover:bg-brandOrange text-white border border-white/20 font-display font-bold text-xs py-2.5 rounded-xl transition-all">
+                            ADD TO TRAY
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Secondary Pick 3 -->
+                <div class="md:col-span-2 glass-card rounded-3xl overflow-hidden border border-white/10 relative group reveal-element flex flex-col justify-end min-h-[320px] p-6" style="transition-delay: 300ms;">
+                    <img src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?auto=format&fit=crop&q=80&w=1000" 
+                         alt="Big Boss Triple Stack Beef Burger" 
+                         class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-darkBg/70 to-transparent"></div>
+                    
+                    <div class="relative z-10 space-y-2">
+                        <span class="px-3 py-1 bg-emerald-500 text-white font-display font-bold text-[11px] uppercase rounded-full tracking-wider inline-block">
+                            NEW ARRIVAL
+                        </span>
+                        <h3 class="font-display font-extrabold text-2xl sm:text-3xl text-white">THE BOSS DOUBLE TOWER BURGER</h3>
+                        <p class="text-brandMuted text-xs max-w-lg">Double crispy patty, double cheddar cheese melt, crispy onion rings and signature boss sauce.</p>
+                        <button onclick="addToOrder('The Boss Double Tower Burger')" class="bg-brandOrange text-white font-display font-bold text-xs px-6 py-2.5 rounded-xl hover:bg-orange-600 transition-all inline-block">
+                            ADD TO TRAY
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Interactive Menu Section -->
+    <section id="menu" class="py-20 bg-darkSurface relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12 reveal-element">
+                <span class="text-xs font-extrabold text-brandOrange tracking-widest uppercase block mb-2">EXPLORE OUR SELECTION</span>
+                <h2 class="font-display text-4xl sm:text-5xl font-extrabold text-white tracking-tight">
+                    FULL CAFÉ <span class="text-brandYellow">MENU</span>
+                </h2>
+                <p class="text-brandMuted text-sm mt-3">
+                    Filter by category or search your exact craving below.
+                </p>
+            </div>
+
+            <!-- Search Bar & Filter Controls Container -->
+            <div class="max-w-4xl mx-auto mb-10 space-y-6 reveal-element">
+                
+                <!-- Search Input -->
+                <div class="relative">
+                    <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-brandMuted text-lg"></i>
+                    <input type="text" id="menuSearchInput" onkeyup="filterMenu()" placeholder="Search your craving (e.g. Burger, Pizza, Shawarma, Shake)..." 
+                           class="w-full bg-darkBg border border-white/10 rounded-2xl py-4 pl-12 pr-4 text-white placeholder-brandMuted focus:outline-none focus:border-brandOrange transition-all font-medium text-sm sm:text-base">
+                    <button onclick="clearSearch()" id="clearSearchBtn" class="hidden absolute right-4 top-1/2 -translate-y-1/2 text-brandMuted hover:text-white text-sm">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </button>
+                </div>
+
+                <!-- Category Filter Buttons Horizontal Scroll -->
+                <div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none no-scrollbar justify-start sm:justify-center" id="categoryButtons">
+                    <button onclick="setCategory('ALL')" class="menu-cat-btn active px-5 py-2.5 rounded-xl font-display text-xs font-bold tracking-wider uppercase transition-all whitespace-nowrap bg-brandOrange text-white shadow-glow-orange" data-cat="ALL">
+                        ALL CRAVINGS
+                    </button>
+                    <button onclick="setCategory('BURGERS')" class="menu-cat-btn px-5 py-2.5 rounded-xl font-display text-xs font-bold tracking-wider uppercase transition-all whitespace-nowrap bg-darkCard text-brandMuted hover:text-white hover:bg-white/10 border border-white/5" data-cat="BURGERS">
+                        BURGERS
+                    </button>
+                    <button onclick="setCategory('PIZZA')" class="menu-cat-btn px-5 py-2.5 rounded-xl font-display text-xs font-bold tracking-wider uppercase transition-all whitespace-nowrap bg-darkCard text-brandMuted hover:text-white hover:bg-white/10 border border-white/5" data-cat="PIZZA">
+                        PIZZA
+                    </button>
+                    <button onclick="setCategory('SHAWARMA')" class="menu-cat-btn px-5 py-2.5 rounded-xl font-display text-xs font-bold tracking-wider uppercase transition-all whitespace-nowrap bg-darkCard text-brandMuted hover:text-white hover:bg-white/10 border border-white/5" data-cat="SHAWARMA">
+                        SHAWARMA & WRAPS
+                    </button>
+                    <button onclick="setCategory('SIDES')" class="menu-cat-btn px-5 py-2.5 rounded-xl font-display text-xs font-bold tracking-wider uppercase transition-all whitespace-nowrap bg-darkCard text-brandMuted hover:text-white hover:bg-white/10 border border-white/5" data-cat="SIDES">
+                        SIDES & FRIES
+                    </button>
+                    <button onclick="setCategory('DRINKS')" class="menu-cat-btn px-5 py-2.5 rounded-xl font-display text-xs font-bold tracking-wider uppercase transition-all whitespace-nowrap bg-darkCard text-brandMuted hover:text-white hover:bg-white/10 border border-white/5" data-cat="DRINKS">
+                        BEVERAGES & SHAKES
+                    </button>
+                </div>
+
+                <!-- Results Counter -->
+                <div class="text-right text-xs font-semibold text-brandMuted" id="menuCount">
+                    Showing all menu items
+                </div>
+
+            </div>
+
+            <!-- Dynamic Menu Grid Container -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="menuItemsGrid">
+                <!-- Javascript will dynamically inject cards here -->
+            </div>
+
+            <!-- Empty Search State -->
+            <div id="noResults" class="hidden text-center py-16 space-y-4">
+                <i class="fa-solid fa-utensils text-5xl text-brandMuted/40"></i>
+                <h2 class="font-display font-bold text-xl text-white">No menu items found</h2>
+                <p class="text-xs text-brandMuted max-w-sm mx-auto">Try searching for something else like "Burger", "Pizza", or "Shawarma".</p>
+                <button onclick="clearSearch()" class="px-5 py-2 rounded-xl bg-brandOrange text-white font-display text-xs font-bold">Reset Search</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Late Night Dedicated Promo Section -->
+    <section id="late-night" class="py-20 relative overflow-hidden bg-gradient-to-b from-darkBg via-darkSurface to-darkBg">
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-brandOrange/20 rounded-full blur-[150px] pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="glass-panel rounded-3xl p-8 sm:p-14 border border-brandOrange/30 shadow-2xl relative overflow-hidden">
+                
+                <div class="grid lg:grid-cols-12 gap-8 items-center">
+                    
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-brandOrange/20 border border-brandOrange/40 text-brandOrange font-display text-xs font-extrabold uppercase">
+                            <i class="fa-solid fa-moon"></i>
+                            <span>NIGHT OWL HEADQUARTERS</span>
+                        </div>
+
+                        <h2 class="font-display text-4xl sm:text-6xl font-black text-white tracking-tight leading-tight">
+                            LATE NIGHT CRAVINGS?<br>
+                            <span class="text-brandYellow">WE ARE OPEN TILL 4 AM.</span>
+                        </h2>
+
+                        <p class="text-brandCream/80 text-sm sm:text-base max-w-lg mx-auto lg:mx-0 leading-relaxed">
+                            Studying late? Hanging out with friends on Ring Road? Big Boss Café keeps the grills fired up until 4:00 AM every night. Freshly cooked hot burgers, crispy fries, and steaming drinks whenever you need them.
+                        </p>
+
+                        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                            <a href="https://wa.me/923701515100?text=Hi%20BIG%20BOSS%20CAF%C3%89,%20I%20have%20a%20late%20night%20order!" target="_blank" class="w-full sm:w-auto bg-brandOrange hover:bg-orange-600 text-white font-display font-extrabold text-sm px-8 py-4 rounded-xl transition-all shadow-glow-orange flex items-center justify-center gap-3">
+                                <i class="fa-brands fa-whatsapp text-lg"></i>
+                                <span>ORDER LATE NIGHT NOW</span>
+                            </a>
+                            <a href="tel:+923701515100" class="w-full sm:w-auto glass-card hover:bg-white/10 text-white font-display font-bold text-sm px-6 py-4 rounded-xl transition-all border border-white/15 flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-phone text-brandYellow"></i>
+                                <span>CALL +92 370 1515100</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-5 relative">
+                        <div class="relative rounded-2xl overflow-hidden border border-white/15 shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=800" 
+                                 alt="Big Boss Café Nighttime Ambiance Peshawar" 
+                                 class="w-full h-80 object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-transparent to-transparent"></div>
+                            
+                            <div class="absolute bottom-4 left-4 right-4 text-center glass-card p-3 rounded-xl border border-white/10">
+                                <span class="text-xs font-extrabold text-brandYellow uppercase tracking-wider">LOCATION REFERENCE</span>
+                                <p class="text-xs text-white font-medium">Ring Road, near One Dollar Shop & MMC Hospital, Peshawar</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Fullscreen Interactive Gallery Section -->
+    <section id="gallery" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12 reveal-element">
+                <span class="text-xs font-extrabold text-brandOrange tracking-widest uppercase block mb-2">VISUAL VIBES</span>
+                <h2 class="font-display text-4xl sm:text-5xl font-extrabold text-white tracking-tight">
+                    THE GALLERY <span class="text-brandYellow">& ATMOSPHERE</span>
+                </h2>
+                <p class="text-brandMuted text-sm mt-3">
+                    Click any image to expand full screen.
+                </p>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="galleryGrid">
+                <!-- Gallery Image 1 -->
+                <div onclick="openLightbox(0)" class="glass-card rounded-2xl overflow-hidden cursor-pointer group relative h-48 sm:h-64 border border-white/10">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=800" alt="Juicy Burger Close-Up" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-darkBg/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-display font-bold text-xs gap-2">
+                        <i class="fa-solid fa-expand text-lg"></i>
+                        <span>VIEW</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Image 2 -->
+                <div onclick="openLightbox(1)" class="glass-card rounded-2xl overflow-hidden cursor-pointer group relative h-48 sm:h-64 border border-white/10">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=800" alt="Fresh Crown Pizza" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-darkBg/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-display font-bold text-xs gap-2">
+                        <i class="fa-solid fa-expand text-lg"></i>
+                        <span>VIEW</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Image 3 -->
+                <div onclick="openLightbox(2)" class="glass-card rounded-2xl overflow-hidden cursor-pointer group relative h-48 sm:h-64 border border-white/10">
+                    <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&q=80&w=800" alt="Chicken Shawarma Wrap" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-darkBg/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-display font-bold text-xs gap-2">
+                        <i class="fa-solid fa-expand text-lg"></i>
+                        <span>VIEW</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Image 4 -->
+                <div onclick="openLightbox(3)" class="glass-card rounded-2xl overflow-hidden cursor-pointer group relative h-48 sm:h-64 border border-white/10">
+                    <img src="https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&q=80&w=800" alt="Loaded Mayo Fries" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-darkBg/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-display font-bold text-xs gap-2">
+                        <i class="fa-solid fa-expand text-lg"></i>
+                        <span>VIEW</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Image 5 -->
+                <div onclick="openLightbox(4)" class="glass-card rounded-2xl overflow-hidden cursor-pointer group relative h-48 sm:h-64 border border-white/10">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=800" alt="Café Dining Vibe" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-darkBg/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-display font-bold text-xs gap-2">
+                        <i class="fa-solid fa-expand text-lg"></i>
+                        <span>VIEW</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Image 6 -->
+                <div onclick="openLightbox(5)" class="glass-card rounded-2xl overflow-hidden cursor-pointer group relative h-48 sm:h-64 border border-white/10">
+                    <img src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?auto=format&fit=crop&q=80&w=800" alt="Double Beef Tower Burger" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-darkBg/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-display font-bold text-xs gap-2">
+                        <i class="fa-solid fa-expand text-lg"></i>
+                        <span>VIEW</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Image 7 -->
+                <div onclick="openLightbox(6)" class="glass-card rounded-2xl overflow-hidden cursor-pointer group relative h-48 sm:h-64 border border-white/10">
+                    <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&q=80&w=800" alt="Cold Coffee and Shakes" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-darkBg/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-display font-bold text-xs gap-2">
+                        <i class="fa-solid fa-expand text-lg"></i>
+                        <span>VIEW</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Image 8 -->
+                <div onclick="openLightbox(7)" class="glass-card rounded-2xl overflow-hidden cursor-pointer group relative h-48 sm:h-64 border border-white/10">
+                    <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&q=80&w=800" alt="Fried Crispy Chicken Wings" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-darkBg/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-display font-bold text-xs gap-2">
+                        <i class="fa-solid fa-expand text-lg"></i>
+                        <span>VIEW</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Fullscreen Lightbox Modal -->
+    <div id="lightboxModal" class="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-all duration-300">
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white text-3xl hover:text-brandOrange z-10 p-2" aria-label="Close Lightbox">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <button onclick="prevLightboxImage()" class="absolute left-4 top-1/2 -translate-y-1/2 text-white bg-white/10 hover:bg-brandOrange w-12 h-12 rounded-full flex items-center justify-center text-xl transition-all z-10" aria-label="Previous Image">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <button onclick="nextLightboxImage()" class="absolute right-4 top-1/2 -translate-y-1/2 text-white bg-white/10 hover:bg-brandOrange w-12 h-12 rounded-full flex items-center justify-center text-xl transition-all z-10" aria-label="Next Image">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <div class="max-w-4xl max-h-[85vh] relative flex flex-col items-center">
+            <img id="lightboxImage" src="" alt="Gallery Preview" class="max-w-full max-h-[75vh] object-contain rounded-2xl border border-white/10 shadow-2xl">
+            <div id="lightboxCaption" class="text-white font-display font-bold text-lg mt-4 text-center"></div>
+        </div>
+    </div>
+
+    <!-- Verified Reviews Section -->
+    <section class="py-20 bg-darkSurface border-y border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-5 space-y-6 text-center lg:text-left reveal-element">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-amber-500/10 text-amber-400 font-display text-xs font-bold uppercase">
+                        <i class="fa-solid fa-star"></i>
+                        <span>VERIFIED GOOGLE RATING</span>
+                    </div>
+
+                    <div class="font-display text-6xl sm:text-7xl font-black text-white flex items-center justify-center lg:justify-start gap-3">
+                        <span>5.0</span>
+                        <div class="flex flex-col text-amber-400 text-2xl gap-1">
+                            <div class="flex gap-1">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="text-xs text-brandMuted font-body font-normal">PERFECT SCORE</span>
+                        </div>
+                    </div>
+
+                    <h2 class="font-display text-3xl font-bold text-white">
+                        PEOPLE IN PESHAWAR LOVE THE VIBE.
+                    </h2>
+
+                    <p class="text-brandMuted text-sm leading-relaxed">
+                        Top ratings on Google for food quality, quick late-night service, and friendly atmosphere on Ring Road.
+                    </p>
+
+                    <a href="https://maps.app.goo.gl/2HMX+28" target="_blank" class="inline-flex items-center gap-3 bg-darkCard hover:bg-white/10 text-white font-display font-bold text-sm px-6 py-3.5 rounded-xl border border-white/15 transition-all">
+                        <i class="fa-brands fa-google text-brandOrange"></i>
+                        <span>SEE US ON GOOGLE MAPS</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs text-brandMuted"></i>
+                    </a>
+                </div>
+
+                <!-- Verified Feedback Quotes Grid -->
+                <div class="lg:col-span-7 grid sm:grid-cols-2 gap-6 reveal-element" style="transition-delay: 150ms;">
+                    
+                    <div class="glass-card p-6 rounded-2xl border border-white/5 space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-brandCream/90 italic leading-relaxed">
+                            "Best late night fast food spot near MMC hospital! The burgers were super juicy and served fresh hot even at 2:00 AM."
+                        </p>
+                        <div class="flex items-center gap-3 pt-2">
+                            <div class="w-8 h-8 rounded-full bg-brandOrange/20 text-brandOrange flex items-center justify-center font-bold text-xs">P</div>
+                            <div>
+                                <div class="text-xs font-bold text-white">Local Peshawar Foodie</div>
+                                <div class="text-[10px] text-brandMuted">Google Verified Review</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-2xl border border-white/5 space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-brandCream/90 italic leading-relaxed">
+                            "Great crown crust pizza and friendly staff. Very convenient location right on Ring Road near One Dollar Shop."
+                        </p>
+                        <div class="flex items-center gap-3 pt-2">
+                            <div class="w-8 h-8 rounded-full bg-brandYellow/20 text-brandYellow flex items-center justify-center font-bold text-xs">W</div>
+                            <div>
+                                <div class="text-xs font-bold text-white">Wazir Colony Resident</div>
+                                <div class="text-[10px] text-brandMuted">Google Verified Review</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Location, Hours & Map Section -->
+    <section id="location" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Details & Hours Card -->
+                <div class="lg:col-span-5 space-y-8 reveal-element">
+                    
+                    <div>
+                        <span class="text-xs font-extrabold text-brandOrange tracking-widest uppercase block mb-2">FIND US IN PESHAWAR</span>
+                        <h2 class="font-display text-4xl font-extrabold text-white tracking-tight">
+                            LOCATION & <span class="text-brandYellow">HOURS</span>
+                        </h2>
+                    </div>
+
+                    <div class="space-y-4 text-sm">
+                        <!-- Address -->
+                        <div class="flex items-start gap-4 glass-card p-4 rounded-2xl border border-white/5">
+                            <div class="w-10 h-10 rounded-xl bg-brandOrange/10 text-brandOrange flex items-center justify-center text-lg shrink-0 mt-1">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <div class="font-display font-bold text-white text-base">BIG BOSS CAFÉ</div>
+                                <p class="text-brandMuted text-xs leading-relaxed mt-1">
+                                    Ring Road, near One Dollar Shop, near MMC Hospital,<br>
+                                    Wazir Colony, Peshawar, 25000, Pakistan
+                                </p>
+                                <div class="text-[11px] text-brandYellow font-mono mt-1">Google Plus Code: 2HMX+28 Peshawar</div>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="flex items-center gap-4 glass-card p-4 rounded-2xl border border-white/5">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-brandMuted">Direct Phone / Order Line</div>
+                                <a href="tel:+923701515100" class="font-display font-bold text-white text-base hover:text-brandOrange transition-colors">
+                                    +92 370 1515100
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Hours Table -->
+                        <div class="glass-card p-5 rounded-2xl border border-white/5 space-y-3">
+                            <div class="flex items-center justify-between font-display text-xs font-bold text-white border-b border-white/10 pb-2">
+                                <span>OPERATING DAYS</span>
+                                <span class="text-brandYellow">OPENING HOURS</span>
+                            </div>
+                            <div class="flex items-center justify-between text-xs text-brandMuted">
+                                <span>Monday – Sunday</span>
+                                <span class="text-white font-semibold">12:00 PM – 4:00 AM</span>
+                            </div>
+                            <div class="text-[11px] text-emerald-400 font-semibold pt-1 flex items-center gap-1.5">
+                                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                                Open 7 Days a Week for Late Night Cravings
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Location Action Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <a href="https://maps.app.goo.gl/2HMX+28" target="_blank" class="flex-1 bg-brandOrange hover:bg-orange-600 text-white font-display font-bold text-xs py-3.5 px-4 rounded-xl text-center shadow-glow-orange flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-diamond-turn-right"></i>
+                            <span>GET DIRECTIONS</span>
+                        </a>
+                        <a href="tel:+923701515100" class="flex-1 bg-darkCard border border-white/10 hover:bg-white/10 text-white font-display font-bold text-xs py-3.5 px-4 rounded-xl text-center flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-phone text-brandYellow"></i>
+                            <span>CALL NOW</span>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Right Visual Map Card Container -->
+                <div class="lg:col-span-7 reveal-element" style="transition-delay: 200ms;">
+                    <div class="glass-card p-3 rounded-3xl border border-white/10 shadow-2xl overflow-hidden relative">
+                        <div class="rounded-2xl overflow-hidden h-[400px] w-full bg-darkCard relative flex items-center justify-center">
+                            <!-- Visual Stylized Map Backdrop Graphic -->
+                            <iframe 
+                                title="BIG BOSS CAFÉ Peshawar Map Location"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.7!2d71.55!3d34.001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDAwJzAz.NiJOIDcxwrAzMycwMC4wIkU!5e0!3m2!1sen!2spk!4v1680000000000!5m2!1sen!2spk" 
+                                class="w-full h-full border-0 filter grayscale invert contrast-125 opacity-80 hover:opacity-100 transition-opacity" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                            </iframe>
+
+                            <div class="absolute bottom-4 right-4 glass-panel px-4 py-2 rounded-xl text-xs font-bold text-white border border-white/15 pointer-events-none">
+                                <i class="fa-solid fa-map-pin text-brandOrange mr-1.5"></i> Ring Road, Peshawar
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Custom Order Tray / WhatsApp Quick Drawer Modal -->
+    <div id="cartModal" class="fixed inset-0 bg-black/80 backdrop-blur-md z-50 flex justify-end opacity-0 pointer-events-none transition-all duration-300">
+        <div class="w-full max-w-md bg-darkBg border-l border-white/10 h-full flex flex-col justify-between p-6 overflow-y-auto">
+            
+            <div class="space-y-6">
+                <div class="flex items-center justify-between border-b border-white/10 pb-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-brandOrange text-white flex items-center justify-center font-display font-black text-sm">BB</div>
+                        <div>
+                            <h3 class="font-display font-bold text-lg text-white leading-none">YOUR ORDER TRAY</h3>
+                            <span class="text-[11px] text-brandMuted">Quick WhatsApp Checkout</span>
+                        </div>
+                    </div>
+                    <button onclick="toggleCartModal()" class="text-brandMuted hover:text-white text-xl p-2" aria-label="Close Order Tray">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <!-- Order Tray Items List -->
+                <div id="cartItemsContainer" class="space-y-3">
+                    <!-- Javascript populates tray items -->
+                </div>
+
+                <!-- Custom Note Input -->
+                <div class="space-y-2">
+                    <label for="orderNote" class="text-xs font-bold text-brandMuted uppercase tracking-wider block">Special Instructions / Address Note</label>
+                    <textarea id="orderNote" rows="2" placeholder="e.g. Extra garlic sauce, delivery to Wazir Colony near MMC..." class="w-full bg-darkCard border border-white/10 rounded-xl p-3 text-xs text-white placeholder-brandMuted focus:outline-none focus:border-brandOrange"></textarea>
+                </div>
+            </div>
+
+            <!-- Footer Action inside Modal -->
+            <div class="space-y-3 pt-6 border-t border-white/10">
+                <div class="flex items-center justify-between text-xs font-semibold text-brandMuted">
+                    <span>Total Selected Items:</span>
+                    <span id="trayItemCount" class="text-white font-bold">0</span>
+                </div>
+
+                <button onclick="sendWhatsAppOrder()" class="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-display font-extrabold py-4 rounded-xl transition-all shadow-lg flex items-center justify-center gap-3">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span>SEND ORDER VIA WHATSAPP</span>
+                </button>
+
+                <p class="text-[10px] text-center text-brandMuted">
+                    Order will be sent directly to BIG BOSS CAFÉ WhatsApp (+92 370 1515100).
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Mobile Fixed Bottom Action Bar -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 z-30 glass-panel border-t border-white/15 px-3 py-2.5 flex items-center justify-around">
+        <a href="tel:+923701515100" class="flex flex-col items-center text-brandMuted hover:text-white">
+            <i class="fa-solid fa-phone text-lg text-brandYellow"></i>
+            <span class="text-[10px] font-bold mt-1">CALL</span>
+        </a>
+
+        <a href="https://wa.me/923701515100?text=Hi%20BIG%20BOSS%20CAF%C3%89,%20I%20would%20like%20to%20place%20an%20order!" target="_blank" class="flex flex-col items-center text-emerald-400">
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+            <span class="text-[10px] font-bold mt-1">WHATSAPP</span>
+        </a>
+
+        <a href="#menu" class="flex flex-col items-center text-brandOrange">
+            <i class="fa-solid fa-utensils text-lg"></i>
+            <span class="text-[10px] font-bold mt-1">MENU</span>
+        </a>
+
+        <a href="https://maps.app.goo.gl/2HMX+28" target="_blank" class="flex flex-col items-center text-brandMuted hover:text-white">
+            <i class="fa-solid fa-location-dot text-lg"></i>
+            <span class="text-[10px] font-bold mt-1">MAP</span>
+        </a>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-darkSurface border-t border-white/10 pt-16 pb-24 md:pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+                
+                <!-- Brand Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-brandOrange text-white flex items-center justify-center font-display font-black text-lg">BB</div>
+                        <span class="font-display font-extrabold text-xl text-white">BIG BOSS CAFÉ</span>
+                    </div>
+                    <p class="text-xs text-brandMuted leading-relaxed">
+                        Peshawar’s late-night fast food & café spot on Ring Road. Burgers, Pizzas, Shawarmas and good vibes until 4:00 AM.
+                    </p>
+                    <div class="text-xs text-brandYellow font-bold">
+                        5.0 ★ Google Rated Fast Food
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-display font-bold text-sm text-white uppercase tracking-wider mb-4">NAVIGATION</h3>
+                    <ul class="space-y-2.5 text-xs text-brandMuted font-medium">
+                        <li><a href="#home" class="hover:text-brandOrange transition-colors">Home</a></li>
+                        <li><a href="#why-us" class="hover:text-brandOrange transition-colors">Why Big Boss</a></li>
+                        <li><a href="#menu" class="hover:text-brandOrange transition-colors">Menu Specialties</a></li>
+                        <li><a href="#late-night" class="hover:text-brandOrange transition-colors">Late Night (4 AM)</a></li>
+                        <li><a href="#gallery" class="hover:text-brandOrange transition-colors">Food Gallery</a></li>
+                        <li><a href="#location" class="hover:text-brandOrange transition-colors">Location & Directions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Services -->
+                <div>
+                    <h3 class="font-display font-bold text-sm text-white uppercase tracking-wider mb-4">SERVICES</h3>
+                    <ul class="space-y-2.5 text-xs text-brandMuted font-medium">
+                        <li><i class="fa-solid fa-check text-brandOrange mr-2"></i>Dine-In Seating</li>
+                        <li><i class="fa-solid fa-check text-brandOrange mr-2"></i>Quick Takeout / Pickup</li>
+                        <li><i class="fa-solid fa-check text-brandOrange mr-2"></i>Express Home Delivery</li>
+                        <li><i class="fa-solid fa-check text-brandOrange mr-2"></i>Late Night Service (Till 4 AM)</li>
+                    </ul>
+                </div>
+
+                <!-- Direct Contact -->
+                <div>
+                    <h3 class="font-display font-bold text-sm text-white uppercase tracking-wider mb-4">CONTACT</h3>
+                    <p class="text-xs text-brandMuted mb-2">Ring Road, near One Dollar Shop, Wazir Colony, Peshawar</p>
+                    <a href="tel:+923701515100" class="font-display font-bold text-sm text-white hover:text-brandOrange block mb-3">
+                        +92 370 1515100
+                    </a>
+                    <a href="https://wa.me/923701515100" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-500/20 text-emerald-400 font-display text-xs font-bold border border-emerald-500/30">
+                        <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp Us
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-brandMuted gap-4">
+                <div>
+                    © 2026 BIG BOSS CAFÉ Peshawar. All rights reserved.
+                </div>
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="hover:text-white flex items-center gap-2 transition-colors">
+                    <span>Back to Top</span>
+                    <i class="fa-solid fa-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Application Logic Script -->
+    <script>
+        // Verified Menu Database
+        const MENU_DATA = [
+            {
+                id: 'b1',
+                name: 'Boss Monster Zinger Burger',
+                category: 'BURGERS',
+                desc: 'Crispy double fried zinger chicken fillet, cheddar cheese melt, lettuce & house special sauce.',
+                badge: 'BESTSELLER',
+                image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=600'
+            },
+            {
+                id: 'b2',
+                name: 'The Boss Double Tower Beef Burger',
+                category: 'BURGERS',
+                desc: 'Juicy smashed double beef patties, melted cheddar, crispy onion ring & smoked mayo.',
+                badge: 'POPULAR',
+                image: 'https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?auto=format&fit=crop&q=80&w=600'
+            },
+            {
+                id: 'b3',
+                name: 'Smokey BBQ Crispy Burger',
+                category: 'BURGERS',
+                desc: 'Crispy chicken fillet tossed in signature BBQ glaze topped with jalapeños.',
+                badge: '',
+                image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&q=80&w=600'
+            },
+            {
+                id: 'p1',
+                name: 'Crown Crust Special Pizza',
+                category: 'PIZZA',
+                desc: 'Crown crust stuffed pockets with kebabs & cream cheese, topped with tikka chicken & veggies.',
+                badge: 'SIGNATURE',
+                image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=600'
+            },
+            {
+                id: 'p2',
+                name: 'Chicken Fajita Feast Pizza',
+                category: 'PIZZA',
+                desc: 'Mexican fajita seasoned chicken, bell peppers, onions, jalapenos & mozarella.',
+                badge: '',
+                image: 'https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?auto=format&fit=crop&q=80&w=600'
+            },
+            {
+                id: 'p3',
+                name: 'Pepperoni Overload Pizza',
+                category: 'PIZZA',
+                desc: 'Loaded double beef pepperoni slices over rich tomato sauce & stringy mozzarella.',
+                badge: 'HOT',
+                image: 'https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&q=80&w=600'
+            },
+            {
+                id: 's1',
+                name: 'Special Club Shawarma',
+                category: 'SHAWARMA',
+                desc: 'Flame roasted chicken wrapped in toasted bread with garlic mayo sauce & pickles.',
+                badge: 'TOP RATED',
+                image: 'https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&q=80&w=600'
+            },
+            {
+                id: 's2',
+                name: 'Zinger Cheese Shawarma Wrap',
+                category: 'SHAWARMA',
+                desc: 'Crispy zinger strip bits wrapped with melted cheddar cheese and spicy mayo.',
+                badge: '',
+                image: 'https://images.unsplash.com/photo-1561651823-34feb02250e4?auto=format&fit=crop&q=80&w=600'
+            },
+            {
+                id: 'sd1',
+                name: 'Cheddar Loaded Fries',
+                category: 'SIDES',
+                desc: 'Golden crispy fries smothered in warm cheese sauce, jalapenos and house dip.',
+                badge: 'FAVORITE',
+                image: 'https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&q=80&w=600'
+            },
+            {
+                id: 'sd2',
+                name: 'Crispy Fried Chicken Wings (6 pcs)',
+                category: 'SIDES',
+                desc: 'Golden crunchy chicken wings served with garlic dip.',
+                badge: '',
+                image: 'https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&q=80&w=600'
+            },
+            {
+                id: 'd1',
+                name: 'Chilled Cold Coffee & Ice Cream',
+                category: 'DRINKS',
+                desc: 'Rich brewed espresso blended with vanilla ice cream and chocolate sauce.',
+                badge: 'COOL',
+                image: 'https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&q=80&w=600'
+            },
+            {
+                id: 'd2',
+                name: 'Oreo Thick Shake',
+                category: 'DRINKS',
+                desc: 'Creamy milk shake loaded with crushed Oreo cookies and whipped cream.',
+                badge: '',
+                image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&q=80&w=600'
+            }
+        ];
+
+        // Gallery Images List for Lightbox
+        const GALLERY_IMAGES = [
+            { src: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=1200', title: 'Boss Monster Zinger Burger' },
+            { src: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=1200', title: 'Crown Crust Special Pizza' },
+            { src: 'https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&q=80&w=1200', title: 'Special Club Shawarma' },
+            { src: 'https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&q=80&w=1200', title: 'Cheddar Loaded Mayo Fries' },
+            { src: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=1200', title: 'Café Atmosphere & Vibe' },
+            { src: 'https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?auto=format&fit=crop&q=80&w=1200', title: 'The Boss Double Tower Burger' },
+            { src: 'https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&q=80&w=1200', title: 'Cold Coffee & Shakes' },
+            { src: 'https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&q=80&w=1200', title: 'Crispy Fried Wings' }
+        ];
+
+        // Global State
+        let currentCategory = 'ALL';
+        let currentSearch = '';
+        let trayItems = [];
+        let currentLightboxIndex = 0;
+
+        // Render Menu Cards
+        function renderMenu() {
+            const container = document.getElementById('menuItemsGrid');
+            const noResults = document.getElementById('noResults');
+            const countDisplay = document.getElementById('menuCount');
+
+            const filtered = MENU_DATA.filter(item => {
+                const matchesCategory = currentCategory === 'ALL' || item.category === currentCategory;
+                const matchesSearch = item.name.toLowerCase().includes(currentSearch.toLowerCase()) || 
+                                      item.desc.toLowerCase().includes(currentSearch.toLowerCase()) ||
+                                      item.category.toLowerCase().includes(currentSearch.toLowerCase());
+                return matchesCategory && matchesSearch;
+            });
+
+            countDisplay.innerText = `Showing ${filtered.length} items`;
+
+            if (filtered.length === 0) {
+                container.innerHTML = '';
+                noResults.classList.remove('hidden');
+                return;
+            }
+
+            noResults.classList.add('hidden');
+
+            container.innerHTML = filtered.map(item => `
+                <div class="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-brandOrange/40 transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="${item.image}" alt="${item.name}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            ${item.badge ? `<span class="absolute top-3 left-3 bg-brandOrange text-white font-display text-[10px] font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider">${item.badge}</span>` : ''}
+                        </div>
+                        <div class="p-5 space-y-2">
+                            <div class="text-[10px] font-extrabold text-brandYellow uppercase tracking-widest">${item.category}</div>
+                            <h3 class="font-display font-extrabold text-lg text-white group-hover:text-brandOrange transition-colors">${item.name}</h3>
+                            <p class="text-brandMuted text-xs leading-relaxed line-clamp-2">${item.desc}</p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0 flex items-center justify-between">
+                        <span class="text-xs text-brandCream font-medium">Available</span>
+                        <button onclick="addToOrder('${item.name}')" class="bg-darkCard hover:bg-brandOrange hover:text-white text-white border border-white/10 font-display font-bold text-xs px-4 py-2 rounded-xl transition-all flex items-center gap-1.5">
+                            <i class="fa-solid fa-plus text-xs"></i>
+                            <span>ADD TO TRAY</span>
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Filter Handlers
+        function setCategory(cat) {
+            currentCategory = cat;
+            document.querySelectorAll('.menu-cat-btn').forEach(btn => {
+                if (btn.getAttribute('data-cat') === cat) {
+                    btn.className = 'menu-cat-btn active px-5 py-2.5 rounded-xl font-display text-xs font-bold tracking-wider uppercase transition-all whitespace-nowrap bg-brandOrange text-white shadow-glow-orange';
+                } else {
+                    btn.className = 'menu-cat-btn px-5 py-2.5 rounded-xl font-display text-xs font-bold tracking-wider uppercase transition-all whitespace-nowrap bg-darkCard text-brandMuted hover:text-white hover:bg-white/10 border border-white/5';
+                }
+            });
+            renderMenu();
+        }
+
+        function filterMenu() {
+            const input = document.getElementById('menuSearchInput');
+            const clearBtn = document.getElementById('clearSearchBtn');
+            currentSearch = input.value;
+            if (currentSearch.length > 0) {
+                clearBtn.classList.remove('hidden');
+            } else {
+                clearBtn.classList.add('hidden');
+            }
+            renderMenu();
+        }
+
+        function clearSearch() {
+            const input = document.getElementById('menuSearchInput');
+            input.value = '';
+            currentSearch = '';
+            document.getElementById('clearSearchBtn').classList.add('hidden');
+            renderMenu();
+        }
+
+        // Cart / Tray Management
+        function addToOrder(itemName) {
+            trayItems.push(itemName);
+            updateCartUI();
+            showToast(`Added "${itemName}" to order tray`);
+        }
+
+        function removeFromCart(index) {
+            trayItems.splice(index, 1);
+            updateCartUI();
+        }
+
+        function updateCartUI() {
+            const badge = document.getElementById('cartBadge');
+            const countDisplay = document.getElementById('trayItemCount');
+            const container = document.getElementById('cartItemsContainer');
+
+            countDisplay.innerText = trayItems.length;
+
+            if (trayItems.length > 0) {
+                badge.innerText = trayItems.length;
+                badge.classList.remove('hidden');
+            } else {
+                badge.classList.add('hidden');
+            }
+
+            if (trayItems.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-10 text-brandMuted space-y-2">
+                        <i class="fa-solid fa-basket-shopping text-3xl opacity-40"></i>
+                        <p class="text-xs">Your tray is empty.</p>
+                        <p class="text-[10px]">Explore the menu and click "Add to Tray".</p>
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = trayItems.map((item, idx) => `
+                <div class="glass-card p-3 rounded-xl border border-white/10 flex items-center justify-between">
+                    <span class="font-display font-bold text-xs text-white">${item}</span>
+                    <button onclick="removeFromCart(${idx})" class="text-red-400 hover:text-red-300 text-xs p-1">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+            `).join('');
+        }
+
+        function toggleCartModal() {
+            const modal = document.getElementById('cartModal');
+            if (modal.classList.contains('opacity-0')) {
+                modal.classList.remove('opacity-0', 'pointer-events-none');
+            } else {
+                modal.classList.add('opacity-0', 'pointer-events-none');
+            }
+        }
+
+        function sendWhatsAppOrder() {
+            if (trayItems.length === 0) {
+                showToast('Please add items to your tray first!');
+                return;
+            }
+
+            const note = document.getElementById('orderNote').value;
+            let message = `Hi BIG BOSS CAFÉ Peshawar!\nI would like to place an order:\n\n*Items:* \n`;
+            trayItems.forEach((item, i) => {
+                message += `${i+1}. ${item}\n`;
+            });
+
+            if (note.trim().length > 0) {
+                message += `\n*Note/Address:* ${note}`;
+            }
+
+            const encoded = encodeURIComponent(message);
+            window.open(`https://wa.me/923701515100?text=${encoded}`, '_blank');
+        }
+
+        // Toast Notification System
+        function showToast(msg) {
+            const toast = document.createElement('div');
+            toast.className = 'fixed bottom-20 left-1/2 -translate-x-1/2 z-50 glass-panel border border-brandOrange/50 text-white font-display text-xs font-bold px-5 py-3 rounded-2xl shadow-glow-orange flex items-center gap-2 animate-bounce';
+            toast.innerHTML = `<i class="fa-solid fa-circle-check text-emerald-400"></i> ${msg}`;
+            document.body.appendChild(toast);
+
+            setTimeout(() => {
+                toast.remove();
+            }, 2500);
+        }
+
+        // Lightbox Functions
+        function openLightbox(index) {
+            currentLightboxIndex = index;
+            const modal = document.getElementById('lightboxModal');
+            const img = document.getElementById('lightboxImage');
+            const caption = document.getElementById('lightboxCaption');
+
+            img.src = GALLERY_IMAGES[index].src;
+            caption.innerText = GALLERY_IMAGES[index].title;
+
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+        }
+
+        function closeLightbox() {
+            const modal = document.getElementById('lightboxModal');
+            modal.classList.add('opacity-0', 'pointer-events-none');
+        }
+
+        function nextLightboxImage() {
+            currentLightboxIndex = (currentLightboxIndex + 1) % GALLERY_IMAGES.length;
+            openLightbox(currentLightboxIndex);
+        }
+
+        function prevLightboxImage() {
+            currentLightboxIndex = (currentLightboxIndex - 1 + GALLERY_IMAGES.length) % GALLERY_IMAGES.length;
+            openLightbox(currentLightboxIndex);
+        }
+
+        // Keyboard Support for Lightbox
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowRight') nextLightboxImage();
+            if (e.key === 'ArrowLeft') prevLightboxImage();
+        });
+
+        // Mobile Menu Navigation Toggle
+        function toggleMobileMenu() {
+            const overlay = document.getElementById('mobileMenuOverlay');
+            if (overlay.classList.contains('opacity-0')) {
+                overlay.classList.remove('opacity-0', 'pointer-events-none');
+            } else {
+                overlay.classList.add('opacity-0', 'pointer-events-none');
+            }
+        }
+
+        // Scroll Intersection Observer for Reveal Elements
+        function initScrollAnimations() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.reveal-element').forEach(el => observer.observe(el));
+        }
+
+        // Sticky Navbar Effect on Scroll
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('mainHeader');
+            if (window.scrollY > 40) {
+                header.classList.add('py-1');
+            } else {
+                header.classList.remove('py-1');
+            }
+        });
+
+        // Initialize App on Window Load
+        window.onload = function() {
+            renderMenu();
+            initScrollAnimations();
+            updateCartUI();
+        };
+    </script>
+</body>
+</html>
